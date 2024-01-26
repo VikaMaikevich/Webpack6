@@ -1,0 +1,25 @@
+// /* ШРИФТ */
+
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes Regular"), url("/src/fonts/TTLakes-Regular.woff") format("woff"), url("/src/fonts/TTLakes-Regular.eot") format("embedded-opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes Medium"), url("/src/fonts/TTLakes-Medium.woff") format("woff"), url("/src/fonts/TTLakes-Medium.eot") format("embedded-opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes Bold"), url("/src/fonts/TTLakes-Bold.woff") format("woff"), url("/src/fonts/TTLakes-Bold.eot") format("embedded-opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }

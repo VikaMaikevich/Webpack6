@@ -1,0 +1,82 @@
+.section {
+  &__content{
+    margin-top: 16px;
+    @media (min-width: 1120px) {
+    margin-left: 0px;
+    }
+  }
+    
+  &__swiper {
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  &__swiper-slide {
+    height: 72px;
+    min-width: 220px;
+    max-width: 240px;
+
+    @media (min-width: 768px) {
+      min-width: none;
+      max-width: none;
+      width: calc((100% - (2 * 24px)) / 3);
+      margin: 0;
+    }
+
+    @media (min-width: 1440px) {
+      width: calc((100% - (3 * 32px)) / 4);
+    }
+  }
+
+  &__content-card {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    background-color: $back-menu;
+    border-radius: 6px;
+    align-items: center;
+    padding: 16px 20px;
+    border: 1px solid $line;
+  }
+
+  &__content-button {
+    height: 40px;
+  }
+
+  &__button {
+    
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      margin: 10px 0 0 24px;
+      gap: 9px;
+      padding-left: 5px;
+    }
+  }
+
+  &__content-button {
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+      transition: 0.2s;
+    }
+  }
+  &__content-button-down-blue--hide{
+    @media (min-width: 768px) and (min-width: 1120px) {
+    transform: rotate(180deg);
+    }
+  }
+  margin-bottom: 24px;
+  
+  @media (min-width: 768px) {
+      margin-bottom: 32px;
+  }
+
+  @media (min-width: 1120px) {
+      margin-bottom: 50px;
+  }
+}
+
+  

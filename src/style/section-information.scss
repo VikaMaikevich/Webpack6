@@ -1,0 +1,40 @@
+.section-information{
+  @media (max-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+&__text {
+    color: $text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    max-width: 420px;
+    margin-bottom: 18px;
+  }
+
+  &__special {
+    color: $text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(/src/img/more.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 24px;
+      height: 27px;
+    }
+  }
+  }
